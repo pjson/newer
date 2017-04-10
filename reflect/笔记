@@ -1,0 +1,61 @@
+反射:这种动态获取的信息以及动态调用对象的方法的功能
+    称为java语言的反射机制
+
+获取Class对象的三种方法：
+    object.getClass();
+    方法名.class;
+    Class.forName("test.方法名")
+
+    类型
+        属性 Field f=Class对象.getField();
+        方法
+        构造方法
+
+        调用
+            o.call(par)
+
+            m.invoke(o.par)
+
+
+
+    运行时（动态）
+
+    代理模式（静态）    Proxy
+        定义与实现分离开，并在实现中添加更多功能。
+        interface   Subject
+            sayHello
+
+        class   SubjectImp;(RealSubject)
+            sayHello
+
+        代理
+        class   ProxySubject
+    动态代理（反射）
+
+
+设计模式：
+
+    观察者模式（订阅-发布的方式）
+            数据
+                被观察的对象、
+                发布者
+
+            界面
+                观察者
+                订阅（希望获得通知）
+
+
+    例如：android
+            广播接收器（观察者）
+            EventBus
+            RxJava
+            RxAndroid
+
+构造方法
+
+    class 对象的模版
+
+    单例(private)
+
+    构造器（builder)
+
